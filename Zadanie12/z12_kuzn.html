@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<div style="color:green;font-size:41px;">
+			<script language="JavaScript">
+				var a=parseFloat(prompt("D1_kuz=",""));
+				var b=parseFloat(prompt("D2_kuz=",""));
+				var c=parseFloat(prompt("G1_kuz=",""));
+				var d=parseFloat(prompt("G2_kuz=",""));
+				var sekund=(b-a)*((d-c)*3600);
+				if (a<=b && a>=1 && b<=31 && c<=d && c>=1 && d<=24) {
+					document.write("ilość sekund="+sekund+" sekund<br>");
+				} else {
+					document.write("dane niepoprawne");
+				}
+			</script>
+		</div>
+	</body>
+</html>

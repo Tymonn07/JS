@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<div style="color:navy;font-size:50px;">
+			<script language="JavaScript">
+				var pierwsza_Kuz=parseFloat(prompt("Podaj Pierwszą Liczbę=",""));
+				var druga_Kuz=parseFloat(prompt("Podaj Drugą Liczbę=",""));
+				
+				var cz_1 = parseFloat(pierwsza_Kuz*pierwsza_Kuz*pierwsza_Kuz)
+				var cz_2 = parseFloat(3*(pierwsza_Kuz*pierwsza_Kuz)*druga_Kuz)
+				var cz_3 = parseFloat(3*pierwsza_Kuz*(druga_Kuz*druga_Kuz))
+				var cz_4 = parseFloat(druga_Kuz*druga_Kuz*druga_Kuz)
+				var razem = cz_1+cz_2+cz_3+cz_4
+				
+				document.write("(" + pierwsza_Kuz + "+" + druga_Kuz + ")^3=" + pierwsza_Kuz + "^3+3*" + pierwsza_Kuz + "^2*" + druga_Kuz + "+3*" + pierwsza_Kuz + "*" + druga_Kuz + "^2+" + druga_Kuz + "^3=" + cz_1 + "+" + cz_2 + "+" + cz_3 + "+" + cz_4 + "=" + razem);
+			</script>
+		</div>
+	</body>
+</html>
+
+
