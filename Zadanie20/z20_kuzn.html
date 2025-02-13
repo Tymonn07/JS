@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+				function AB_kuz(){
+					var xa_kuz= parseFloat(document.getElementById('xa').value);
+					var xb_kuz= parseFloat(document.getElementById('xb').value);
+					var ya_kuz= parseFloat(document.getElementById('ya').value);
+					var yb_kuz= parseFloat(document.getElementById('yb').value);
+					
+					var pot1 = Math.pow(xa_kuz-xb_kuz,2);
+					var pot2 = Math.pow(ya_kuz-yb_kuz,2);
+					
+					var h = pot1+pot2;
+					var odc = Math.sqrt(h);
+					
+					document.getElementById("nazwa").innerHTML ="AB= "+odc;
+				}
+				function BC_kuz(){
+					var xb_kuz= parseFloat(document.getElementById('xb').value);
+					var xc_kuz= parseFloat(document.getElementById('xc').value);
+					var yb_kuz= parseFloat(document.getElementById('yb').value);
+					var yc_kuz= parseFloat(document.getElementById('yc').value);
+					
+					var pot1 = Math.pow(xb_kuz-xc_kuz,2);
+					var pot2 = Math.pow(yb_kuz-yc_kuz,2);
+					
+					var h = pot1+pot2;
+					var odc = Math.sqrt(h);
+					
+					document.getElementById("nazwa").innerHTML ="BC= "+odc;
+				}
+				function AC_kuz(){
+					var xa_kuz= parseFloat(document.getElementById('xa').value);
+					var xc_kuz= parseFloat(document.getElementById('xc').value);
+					var ya_kuz= parseFloat(document.getElementById('ya').value);
+					var yc_kuz= parseFloat(document.getElementById('yc').value);
+					
+					var pot1 = Math.pow(xa_kuz-xc_kuz,2);
+					var pot2 = Math.pow(ya_kuz-yc_kuz,2);
+					
+					var h = pot1+pot2;
+					var odc = Math.sqrt(h);
+					
+					document.getElementById("nazwa").innerHTML ="AC= "+odc;
+					
+				}
+		</script>
+	Podaj xa: <input type="text" id="xa" value="" size="4">
+	Podaj ya: <input type="text" id="ya" value="" size="4"><br><br>
+	Podaj xb: <input type="text" id="xb" value="" size="4">
+	Podaj yb: <input type="text" id="yb" value="" size="4"><br><br>
+	Podaj xc: <input type="text" id="xc" value="" size="4">
+	Podaj yc: <input type="text" id="yc" value="" size="4"><br><br>
+	
+	<input type="button" name="AB" value="Oblicz odcinek AB" Onclick="AB_kuz()"><br><br>
+	<input type="button" name="AC" value="Oblicz odcinek AC" Onclick="BC_kuz()"><br><br>
+	<input type="button" name="BC" value="Oblicz odcinek BC" Onclick="AC_kuz()"><br><br>
+	
+	<div style="color:red;font-size:50px;"id="nazwa"></div>
+	</body>
+</html>
