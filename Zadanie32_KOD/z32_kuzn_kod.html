@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang= "pl-PL">
+	<head>
+		<META HTTP-EQUIV="content-type" CONTENT="text/html;" CHARSET="iso-8859-2" CHARSET="UTF-8">
+	</head>
+	<body>
+		<textarea cols="150" rows="50">
+<html>
+	<head>
+		<script type="text/javascript">
+			function wiezowiec(lata_budowy,miejsce_budowy,ile_pieter)
+			{
+			this.lata=lata_budowy;
+			this.miejsce=miejsce_budowy;
+			this.pietra=ile_pieter;
+			}
+			wiezowiec.prototype.wypisz = function ()
+			{
+			alert(this.lata + ' ' + this.miejsce+ ' ' + this.pietra);
+			};
+			var wiezowiec1 = new wiezowiec("3", "Kraków", "14");
+			var wiezowiec2 = new wiezowiec('2', 'Gdańsk', '21');
+			var wiezowiec3 = new wiezowiec('4', 'Warszawa', '8');
+			wiezowiec1.wypisz();
+			wiezowiec2.wypisz();
+			wiezowiec3.wypisz();
+			document.write("dostęp do właściwości"+"<br>");
+			document.write("wiezowiec pierwszy"+" "+wiezowiec1.lata+" "+wiezowiec1.miejsce+" "+wiezowiec1.pietra+"<br>");
+			document.write("wiezowiec drugi"+" "+wiezowiec2.lata+" "+wiezowiec2.miejsce+" "+wiezowiec2.pietra+"<br>");
+			document.write("wiezowiec trzeci"+" "+wiezowiec3.lata+" "+wiezowiec3.miejsce+" "+wiezowiec3.pietra+"<br>");
+		</script>
+	</head>
+	<body>
+		<br>
+		programowanie obiektowe
+	</body>
+</html>
+		</textarea>
+	</body>
+</html>
