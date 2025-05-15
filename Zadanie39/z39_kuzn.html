@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="styl.css">
+	</head>
+	<body>
+		<script type="text/javascript">
+			function Kolor_kuzn()
+			{
+			var k_kuzn_n= document.getElementById('kolor').value;
+			var k_kuzn = k_kuzn_n.toLowerCase()
+			if (k_kuzn === "czerwony" || k_kuzn === "1" ) {
+				document.getElementById("nazwa").innerHTML = "<h1><span style='color:red'>" + "wczytałeś kolor: "+ "1 - czerwony" + "</span></h1>";
+			}
+			if (k_kuzn === "niebieski" || k_kuzn === "2" ) {
+				document.getElementById("nazwa").innerHTML = "<h1><span style='color:blue'>" + "wczytałeś kolor: "+ "2 - niebieski" + "</span></h1>";
+			}
+			}
+		</script>
+		
+		<h1><span style='color:green'>Menu</span></h1>
+		<h1><span style='color:red'>1 - czerwony</span></h1>
+		<h1><span style='color:blue'>2 - niebieski	</span></h1><br><br>
+		<input type="text" id="kolor" value="podaj kolor">
+		<input type="button" name="pole" value="Wczytaj Kolor" Onclick="Kolor_kuzn()"><br><br>
+		<div id="nazwa"></div>
+	</body>
+</html>	
